@@ -13,9 +13,20 @@
         height: 66px;
     }
 
-    @media screen and (min-width: 600px){
+    @media screen and (max-width: 700px){
         div {
-            width: 133.59px;
+            width: 120px;
+            height: 46px;
+            font-size: 12px;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+        }
+        p{
+            text-align: center;
+            margin: 0px;
         }
     }
 }

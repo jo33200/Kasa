@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 import Banner from './components/Banner/Banner'
+import Home from './pages/home/Home'
 import './index.scss'
 
  
@@ -12,7 +13,7 @@ ReactDOM.render(
             
             <Banner />
             <Routes>
-                {/*<Route path="/" element={<Home />} />*/}
+                <Route path="/" element={<Home />} />
             </Routes>
             <Footer />
         </Router>
