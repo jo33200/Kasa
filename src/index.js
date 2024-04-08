@@ -10,7 +10,6 @@ import './index.scss'
 ReactDOM.render(
     <React.StrictMode>
         <Router>
-            
             <Banner />
             <Routes>
                 <Route path="/" element={<Home />} />
