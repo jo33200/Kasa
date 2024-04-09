@@ -5,6 +5,16 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
+
+    @media screen and (max-width: 768px){
+        width: 355px;
+        height: 255px;
+    }
+    @media screen and (max-width: 480px){
+        width: 80%;
+        height: 200px;
+        
+    }
     
     img{
         width: 100%;
@@ -31,4 +41,22 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+
+    @media screen and (max-width: 1240px){
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    @media screen and (max-width: 1024px){
+        width: 90%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 768px){
+        margin-top: 30px;
+        width: 90%;
+        gap: 20px; 
+        padding-top: 5%;
+    }
 }

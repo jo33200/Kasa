@@ -4,6 +4,17 @@
     position: relative;
     border-radius: 20px;
 
+    @media screen and (max-width: 1240px){
+        width: 90%;
+        height: 200px;
+        
+    }
+    @media screen and (max-width: 1024px){
+        width: 90%;
+        height: 180px;
+        
+    }
+
     img{
         width: 100%;
         height: 100%;
@@ -35,6 +46,22 @@
         left: 50%; // Centre le texte horizontalement
         transform: translate(-50%, -50%); // Déplace le texte vers la gauche et vers le haut de 50% de sa propre taille
         z-index: 3;
+    }
+
+    @media screen and (max-width: 1024px){
+        p{
+            font-size: 40px;
+            width: 90%;
+        }
+        
+    }
+
+    @media screen and (max-width: 768px){
+        p{
+            font-size: 32px;
+            width: 90%;
+            text-align: left;
+        }
     }
 
     
