@@ -1,13 +1,14 @@
-import './Banner.scss';
-import imgAccueil from '../../assets/Image-source1.png';
 
-function HomeBanniere() {
+import imgAbout from '../../assets/Image-source2.png';
+import  './Banner.scss';
+
+function Banner({ imgSrc, altText, children }) {
   return (
-    <div className='accueil-banniere'>
-      <img src={imgAccueil} alt='vue de falaises' />
-      <p>Chez vous, partout et ailleurs</p>
+    <div className='banner'>
+      <img src={imgSrc} alt={altText} />
+      {children && <p>{children}</p>}
     </div>
-    );
+  );
 }
 
-export default HomeBanniere;
+export default Banner;

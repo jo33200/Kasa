@@ -1,5 +1,6 @@
 import './Home.scss';
-import HomeBanniere from '../../components/Banner/Banner';
+import Banner from '../../components/Banner/Banner';
+import imgAccueil from '../../assets/Image-source1.png';
 import CardContainer from '../../components/Card/Card';
 
 function Home() {
@@ -7,7 +8,7 @@ function Home() {
 
   return (
     <div className='home'>
-      <HomeBanniere />
+      <Banner imgSrc={imgAccueil} altText='vue de falaises'>Chez vous, partout et ailleurs</Banner>
       <CardContainer />
     </div>
   );
