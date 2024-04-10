@@ -1,5 +1,3 @@
-
-import imgAbout from '../../assets/Image-source2.png';
 import  './Banner.scss';
 
 function Banner({ imgSrc, altText, children }) {
