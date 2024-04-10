@@ -20,7 +20,7 @@
         border-radius: 20px;
     }
 
-    &::before {
+    &.overlay::before {
         content: "";
         position: absolute;
         top: 0;
