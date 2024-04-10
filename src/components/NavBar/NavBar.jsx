@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import './NavBar.scss';
 import logo from '../../assets/LOGO.svg';
 
-const Banner = () => {
+const NavBar = () => {
     return (
-        <div className="banner">
+        <div className="navBar">
             <img src={logo} alt="logo de Kaza" className="logo" />
             <div className="links">
                 <Link to="/" className="link">Accueil</Link>
@@ -15,4 +15,4 @@ const Banner = () => {
     )
 }
 
-export default Banner;
+export default NavBar;
