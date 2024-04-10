@@ -1,18 +1,13 @@
-import React from "react"; 
-import { Link } from "react-router-dom";
 import './Banner.scss';
-import logo from '../../assets/LOGO.svg';
+import imgAccueil from '../../assets/Image-source1.png';
 
-const Banner = () => {
-    return (
-        <div className="banner">
-            <img src={logo} alt="logo de Kaza" className="logo" />
-            <div className="links">
-                <Link to="/" className="link">Accueil</Link>
-                <Link to="/about" className="link">A Propos</Link>
-            </div>
-        </div>
-    )
+function HomeBanniere() {
+  return (
+    <div className='accueil-banniere'>
+      <img src={imgAccueil} alt='vue de falaises' />
+      <p>Chez vous, partout et ailleurs</p>
+    </div>
+    );
 }
 
-export default Banner;
+export default HomeBanniere;

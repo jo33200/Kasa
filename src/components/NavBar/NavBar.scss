@@ -1,0 +1,71 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    margin: 0px 100px;
+
+    
+    @media screen and (max-width: 1240px) {
+        margin: 0px 20px;
+        padding: 20px 0px;
+        
+    }
+    @media screen and (max-width: 768px) {
+        margin: 0px 30px;
+        padding: 20px 0px;
+        
+    }
+}
+
+.logo {
+    height: 68px;
+
+    @media screen and (max-width: 700px) {
+        height: 46px;
+        
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    width: 300px;
+
+    @media screen and (max-width: 600px){
+        justify-content: flex-end;
+        gap: 20px; 
+        width: 190px;
+        
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    position: relative;
+
+    &::after { // Ajout du pseudo-élément ::after pour le soulignement
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px; // Ajustez cette valeur selon votre besoin
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        visibility: hidden; // Le soulignement est caché par défaut
+        transition: all 0.1s ease; // Animation de transition pour une apparence fluide
+    }
+
+    &:hover::after { // Affichage du soulignement au survol
+        visibility: visible;
+    }
+    @media screen and (max-width: 700px) {
+        font-size: 12px;
+        
+    }
+
+
+}

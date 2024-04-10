@@ -1,5 +1,5 @@
 import './Home.scss';
-import HomeBanniere from './HomeBanniere';
+import HomeBanniere from '../../components/Banner/Banner';
 import CardContainer from '../../components/Card/Card';
 
 function Home() {
