@@ -4,6 +4,7 @@ import Collapse from '../../components/Collapse/Collapse'
 import InfoAppartement from '../../data/housing.json';
 import Tags from '../../components/Tags/Tags';
 import { useParams } from 'react-router-dom';
+import { Fragment } from 'react';
 
 function Housing() {
 
@@ -16,6 +17,7 @@ function Housing() {
 
     const {title, location, description ,equipments, tags} = apartment;
 
+    
     return (
         <div className='housing'>
             <Slideshow />
@@ -27,7 +29,12 @@ function Housing() {
                 </div>
                 <div className='info-container'>
                 <Collapse choice="Description" text={description} />
-                <Collapse choice="Équipements" text={equipments} />
+                <Collapse choice="Équipements" text={equipments.map((equipment, index) => (
+                        <Fragment key={index}>
+                            {equipment}
+                            <br />
+                        </Fragment>
+                    ))} />
                 </div>
             </div> 
         </div>
