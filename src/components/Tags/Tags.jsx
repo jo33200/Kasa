@@ -1,11 +1,9 @@
 import './Tags.scss'
 
-function Tags({tags}) {
+function Tags({tag}) {
     return (
-        <div className='tags'>
-            {tags.map((tag, index) => (
-                <span key={index} className='tag'>{tag}</span>
-            ))}
+        <div className='tag-container'>
+            <span className='tag'>{tag}</span>
         </div>
     )
 }
