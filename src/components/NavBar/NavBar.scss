@@ -1,9 +1,15 @@
+.navbar-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: auto;
+}
 .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
-    margin: 0px 100px;
+    width: 1240px;
 
     
     @media screen and (max-width: 1240px) {
