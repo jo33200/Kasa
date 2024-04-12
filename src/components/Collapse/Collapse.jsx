@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './ChoiceBar.scss'
+import './Collapse.scss'
 import ArrowAbout from '../../assets/arrow_about.svg'
 
-function ChoiceBar({ choice, text }) {
+function Collapse({ choice, text }) {
     const [isTextVisible, setIsTextVisible] = useState(false);
 
     const handleClick = () => {
@@ -10,14 +10,14 @@ function ChoiceBar({ choice, text }) {
     }
 
     return (
-        <div className="choice-bar-container">
-            <div className={`choice-bar ${isTextVisible ? 'open' : ''}`}>
-                <p className="choice-bar__name">{choice}</p>
+        <div className="collapse-container">
+            <div className={`collapse ${isTextVisible ? 'open' : ''}`}>
+                <p className="collapse__name">{choice}</p>
                 <img src={ArrowAbout} alt="flèche de selection" onClick={handleClick} />
             </div>
-            {isTextVisible && <div className="choice-bar__text">{text}</div>}
+            {isTextVisible && <div className="collapse__text">{text}</div>}
         </div>
     )
 }
 
-export default ChoiceBar;
+export default Collapse;

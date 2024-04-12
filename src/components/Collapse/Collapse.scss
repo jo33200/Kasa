@@ -1,4 +1,4 @@
-.choice-bar-container {
+.collapse-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,7 @@
   width: 1023 px;
   height: auto;
 
-  .choice-bar {
+  .collapse {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@
     }
   }
 
-  .choice-bar__text {
+  .collapse__text {
     box-sizing: border-box;
     transform: translateY(0);
     animation: slideIn 1s ease-out;
@@ -53,7 +53,7 @@
     }
   }
 
-  &.open .choice-bar__text {
+  &.open .collapse__text {
     transform: translateY(0);
     
   }
