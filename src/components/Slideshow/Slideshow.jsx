@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './Slideshow.scss'
-import ArrowForward from '../../assets/arrow_forward.svg'
-import ArrowBack from '../../assets/arrow_back.svg'
+import { ReactComponent as ArrowForward } from '../../assets/arrow_forward.svg';
+import { ReactComponent as ArrowBack } from '../../assets/arrow_back.svg';
 import housingData from'../../data/housing.json'
 
 
@@ -28,10 +28,10 @@ function Slideshow() {
     };
 
     return (
-        <div>
-            {images.length > 1 && <ArrowBack onClick={handlePrevious} />}
+        <div className='slideshow'>
+            {images.length > 1 && <ArrowBack className="arrow arrow-back" onClick={handlePrevious} />}
             <img src={images[currentImageIndex]} alt="" />
-            {images.length > 1 && <ArrowForward onClick={handleNext} />}
+            {images.length > 1 && <ArrowForward className="arrow arrow-forward" onClick={handleNext} />}
         </div>
     );
 }

@@ -1,12 +1,16 @@
 import React from 'react';
-import data from '../../data/housing.json';
+import housingData from '../../data/housing.json';
 import './Card.scss';
+import { Link } from 'react-router-dom';
 
-const Card = ({ cover, title }) => {
+const Card = ({id, cover, title }) => {
   return (
+  
     <div className="card">
+      <Link to={`/housing/${id}`} className='link'>
       <img src={cover} alt={title} />
       <h3>{title}</h3>
+      </Link>
     </div>
   );
 };
@@ -14,8 +18,8 @@ const Card = ({ cover, title }) => {
 const CardContainer = () => {
   return (
     <div className="card-container">
-      {data.map((item, index) => (
-        <Card key={index} cover={item.cover} title={item.title} />
+      {housingData.map((item) => (
+        <Card key={item.id} id={item.id} cover={item.cover} title={item.title} />
       ))}
     </div>
   );

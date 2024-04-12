@@ -1,10 +1,9 @@
 import Slideshow from '../../components/Slideshow/Slideshow'
-
+import './housing.scss';
 
 function Housing() {
     return (
-        <div>
-            <h1> Housing </h1>
+        <div className='housing'>
             <Slideshow />
         </div>
     );

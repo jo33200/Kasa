@@ -1,0 +1,30 @@
+.slideshow{
+    width: 1240px;
+    height: 415px;
+    border-radius: 20px;
+    position: relative;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .arrow{
+        width: 70px;
+        height: 96.6px;
+        position: absolute;
+        :hover{
+            cursor: pointer;
+        }
+    }
+    .arrow-back{
+        left: 0;
+        top: 45%;
+    }
+    .arrow-forward{
+        right: 0;
+        top: 45%;
+    }
+  
+}
