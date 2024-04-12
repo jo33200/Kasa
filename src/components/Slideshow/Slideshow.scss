@@ -26,5 +26,10 @@
         right: 0;
         top: 45%;
     }
-  
+    
+    @media screen and (max-width: 1240px){
+        width: 95%;
+        height: 415px;
+        
+    }
 }

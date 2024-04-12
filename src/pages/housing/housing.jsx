@@ -28,6 +28,7 @@ function Housing() {
             key={index} 
             src={index < rating ? StarsActive : StarsInactive} 
             alt={index < rating ? 'Active star' : 'Inactive star'} 
+            className='star'
         />
     ));
     

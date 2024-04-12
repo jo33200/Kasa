@@ -8,4 +8,10 @@
     height: 25px;
     padding: 0px 30px;
     border-radius: 10px;
+
+    @media screen and (max-width: 768px){
+        height: 18px;
+        font-size: 10px;
+        padding: 0px 20px;
+    }
 }
