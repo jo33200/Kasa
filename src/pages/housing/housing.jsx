@@ -3,7 +3,7 @@ import './housing.scss';
 import Collapse from '../../components/Collapse/Collapse'
 import InfoAppartement from '../../data/housing.json';
 import Tags from '../../components/Tags/Tags';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { Fragment } from 'react';
 import StarsActive from '../../assets/star-active.svg'
 import StarsInactive from '../../assets/star-inactive.svg'
@@ -11,10 +11,12 @@ import StarsInactive from '../../assets/star-inactive.svg'
 function Housing() {
 
     const { id } = useParams();
+    const navigate = useNavigate();
 
     const apartment = InfoAppartement.find((apartment) => apartment.id === id);
     if (!apartment) {
-        return <div>Appartement non trouvé</div>;
+        navigate('/error');
+        return null;
     }
 
     const {title, location, description ,equipments, tags, host, rating} = apartment;
