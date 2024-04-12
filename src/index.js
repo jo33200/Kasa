@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer'
 import Banner from './components/NavBar/NavBar'
 import Home from './pages/home/Home'
 import About from './pages/about/about'
-import Logement from './pages/logement/logement'
+import Housing from './pages/housing/housing'
 import Error from './pages/error/error'
 import './index.scss'
 
@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')).render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/logement" element={<Logement />} />
+                <Route path="/housing" element={<Housing />} />
                 <Route path="*" element={<Error />} />
             </Routes>
             <Footer />

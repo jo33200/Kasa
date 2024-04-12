@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../data/logements.json';
+import data from '../../data/housing.json';
 import './Card.scss';
 
 const Card = ({ cover, title }) => {
