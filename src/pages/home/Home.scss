@@ -8,10 +8,12 @@
 
     @media screen and (max-width: 768px){
         margin: 30px 0px;
+        margin-top: 0px;
         
     }
     .desktop-text {
         display: block;
+        font-size: 48px;
 
         @media screen and (max-width: 768px){
             display: none;
@@ -21,10 +23,17 @@
     
     .mobile-text {
         display: none;
+        font-size: 24px;
 
         @media screen and (max-width: 768px){
             display: block;
             
+        }
+    }
+    
+    .banner{
+        @media screen and (max-width: 768px){  
+            height: 111px;  
         }
     }
 }
