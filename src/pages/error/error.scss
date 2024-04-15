@@ -18,7 +18,6 @@
 
         @media screen and (max-width: 1024px) {
             font-size: 96px;
-            
         }
     }
     h2{
@@ -27,20 +26,20 @@
         .break{
             display: none;
         }
+
         @media screen and (max-width: 1024px) {
             font-size: 18px;
             width: 80%;
         }
+
         @media screen and (max-width: 768px) {
             .break{
                 display: inline;
             }
-            
         }
-
     }
+
     a{
-        
         color: black;
         font-size: 18px;
         font-weight:500;

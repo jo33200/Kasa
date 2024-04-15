@@ -12,10 +12,9 @@
 
         @media screen and (max-width: 768px){
             border-radius: 10px;
-            
-        }
-        
+        } 
     }
+    
     .arrow{
         width: 70px;
         height: 96.6px;
@@ -26,29 +25,16 @@
         @media screen and (max-width: 768px){
                 width: 24px;
                 height: 24px;
-            
         }
-        
     }
+    
     .arrow-back{
         left: 0;
         top: 45%;
     }
+
     .arrow-forward{
         right: 0;
         top: 45%;
     }
-    
-    @media screen and (max-width: 1240px){
-        width: 95%;
-        height: 415px;
-        
-    }
-    @media screen and (max-width: 768px){
-        width: 90%;
-        height: 255px;
-        border-radius: 10px;
-        
-    }
-
 }

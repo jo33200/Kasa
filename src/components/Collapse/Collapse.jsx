@@ -13,7 +13,7 @@ function Collapse({ choice, text }) {
         <div className="collapse-container">
             <div className={`collapse ${isTextVisible ? 'open' : ''}`}>
                 <p className="collapse__name">{choice}</p>
-                <img src={ArrowAbout} alt="flèche de selection" onClick={handleClick} />
+                <img src={ArrowAbout} alt="flèche de selection" onClick={handleClick} className='arrow-collapse' />
             </div>
             {isTextVisible && <div className="collapse__text">{text}</div>}
         </div>

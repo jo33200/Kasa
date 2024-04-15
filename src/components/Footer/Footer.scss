@@ -12,9 +12,10 @@
     &__logo{
         height: 66px;
     }
-
-    @media screen and (max-width: 700px){
-        div {
+    
+    div {
+        @media screen and (max-width: 700px){
+        
             width: 120px;
             height: 46px;
             font-size: 12px;
@@ -22,8 +23,8 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-
         }
+
         p{
             text-align: center;
             margin: 0px;

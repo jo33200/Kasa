@@ -5,7 +5,6 @@ import imgAbout from '../../assets/Image-source2.png';
 
 
 function About() {
-
     return (
         <div className="about">
             <Banner imgSrc={imgAbout} altText='vue de montagnes'></Banner>

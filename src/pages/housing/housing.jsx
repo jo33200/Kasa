@@ -61,7 +61,6 @@ function Housing() {
                         {stars}
                     </div>
                 </div>
-                
             </div>
                 <div className='info-container'>
                 <Collapse choice="Description" text={description} />
@@ -72,7 +71,6 @@ function Housing() {
                         </Fragment>
                     ))} />
                 </div>
-             
         </div>
     );
 }

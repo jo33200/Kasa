@@ -6,13 +6,12 @@
   width: 100%;
   height: auto;
 
-
   .collapse {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    padding: 0px 20px;
+    padding: 0px;
     border-radius: 5px;
     background-color: #ff6060;
     width: 100%;
@@ -20,24 +19,31 @@
     color: white;
     font-weight: bold;
     font-size: 24px;
+    position: relative;
+    z-index: 2;
 
-    img {
-      transition: transform 0.3s ease-in-out;
+    .collapse__name {
+      padding-left: 10px;
+    }
+
+    .arrow-collapse {
+      padding-right: 10px;
+      transition: transform 0.5s ease-in-out;
+      transform: rotate(-180deg);
 
       &:hover {
         cursor: pointer;
       }
     }
-
-    &.open img {
+    &.open img{
       transform: rotate(180deg);
     }
   }
 
   .collapse__text {
     box-sizing: border-box;
-    transform: translateY(0);
-    animation: slideIn 1s ease-out;
+    transform: translateY(-0px);
+    animation: slideOut 0.5s ease-in-out;
     overflow: hidden;
     margin-top: 0px;
     padding: 20px 20px;
@@ -47,19 +53,21 @@
     background-color: #f6f6f6 ;
     font-size: 20px;
     border-radius: 0px 0px 10px 10px;
+    position: relative;
+    z-index: 1;
   }
-  @keyframes slidein {
+
+  @keyframes slideOut {
     from {
-      margin-top: 50%;
+      transform: translateY(-30px);
     }
   
     to {
-      margin-bottom: 0%;
+      transform: translateY(0);
     }
   }
 
   &.open .collapse__text {
-    transform: translateY(0);
-    
+    transform: translate(0);
   }
 }
