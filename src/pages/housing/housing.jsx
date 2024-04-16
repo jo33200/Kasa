@@ -4,7 +4,7 @@ import Collapse from '../../components/Collapse/Collapse'
 import InfoAppartement from '../../data/housing.json';
 import Tags from '../../components/Tags/Tags';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import StarsActive from '../../assets/star-active.svg'
 import StarsInactive from '../../assets/star-inactive.svg'
 
@@ -14,8 +14,14 @@ function Housing() {
     const navigate = useNavigate();
 
     const apartment = InfoAppartement.find((apartment) => apartment.id === id);
+
+    useEffect(() => {
+        if (!apartment) {
+            navigate('/error');
+        }
+    }, [apartment, navigate]);
+
     if (!apartment) {
-        navigate('/error');
         return null;
     }
 
