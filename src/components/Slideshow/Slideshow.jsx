@@ -29,9 +29,9 @@ function Slideshow() {
 
     return (
         <div className='slideshow'>
-            {images.length > 1 && <ArrowBack className="arrow arrow-back" onClick={handlePrevious} />}
-            <img src={images[currentImageIndex]} alt="" />
-            {images.length > 1 && <ArrowForward className="arrow arrow-forward" onClick={handleNext} />}
+            {images.length > 2 && <ArrowBack className="arrow arrow-back" onClick={handlePrevious} />}
+            <img src={images[currentImageIndex]} alt="photographie du logement" />
+            {images.length > 2 && <ArrowForward className="arrow arrow-forward" onClick={handleNext} />}
         </div>
     );
 }
