@@ -63,6 +63,9 @@
     &:hover::after { 
         visibility: visible;
     }
+    &:hover::after, &.active::after { 
+        visibility: visible;
+    }
     
     @media screen and (max-width: 768px) {
         font-size: 12px;
