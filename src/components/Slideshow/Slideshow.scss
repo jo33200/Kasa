@@ -37,4 +37,21 @@
         right: 0;
         top: 45%;
     }
+    .page-number{
+        position: absolute;
+        bottom: 0;
+        right: 48%;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        @media screen and (max-width: 768px){
+            font-size: 12px;
+            padding: 5px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    }
 }
